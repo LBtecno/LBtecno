@@ -12,7 +12,7 @@ const postsData = [
     mediaUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
     date: "2026-07-20",
     version: "v2.4.0",
-    fileSize: "18.5 MB",
+    fileSize: "8.5 MB",
     shortDescription: "Script interactivo y ejecutable para la limpieza profunda de caché, optimización de RAM y gestión de procesos en Windows y Linux.",
     content: `
       <p><strong>LB-Optimizer Pro</strong> es una herramienta ligera desarrollada por LBtecno diseñada para ingenieros, administradores de sistemas y usuarios avanzados que buscan exprimir el máximo rendimiento de sus equipos.</p>

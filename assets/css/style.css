@@ -60,6 +60,41 @@ body {
   gap: 0.5rem;
 }
 
+.brand-logo-img {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo:hover .brand-logo-img {
+  transform: scale(1.06);
+}
+
+.hero-logo-img {
+  height: 72px;
+  width: auto;
+  display: inline-block;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.hero-logo-img:hover {
+  transform: scale(1.05);
+}
+
+.modal-logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
 .brand-badge {
   background: var(--bg-secondary-container);
   color: var(--primary);
