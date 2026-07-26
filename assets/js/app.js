@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
     return postsData.filter(post => {
       const matchesCategory = activeCategory === 'Todos' || post.category === activeCategory;
       const searchLower = searchTerm.toLowerCase().trim();
-      
-      const matchesSearch = !searchLower || 
+
+      const matchesSearch = !searchLower ||
         post.title.toLowerCase().includes(searchLower) ||
         post.shortDescription.toLowerCase().includes(searchLower) ||
         post.tags.some(tag => tag.toLowerCase().includes(searchLower)) ||
@@ -275,7 +275,7 @@ function escapeHtml(text) {
 function copyCodeSnippet(button) {
   const container = button.closest('.code-block-container');
   const codeText = container.querySelector('code').innerText;
-  
+
   navigator.clipboard.writeText(codeText).then(() => {
     const originalText = button.innerHTML;
     button.innerHTML = `<span class="material-symbols-outlined text-sm text-success align-middle me-1">check_circle</span> Copiado!`;

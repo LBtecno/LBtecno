@@ -36,7 +36,7 @@ const postsData = [
     ],
     downloadUrl: "https://github.com/LBtecno/lbtecno-gtpw/archive/refs/tags/v1.0.2.zip",
     downloadFileName: "",
-    demoUrl: "https://gtpw.demo.lbtecno.net/",
+    demoUrl: "https://demos.lbtecno.net/gtpw/tienda/pizzas/",
     tags: ["plugins", "wordpress", "whatsapp"]
   }
 ];
