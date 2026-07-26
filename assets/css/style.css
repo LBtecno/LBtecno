@@ -105,6 +105,45 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Badges & Secondary Container Utilities */
+.bg-secondary-container {
+  background-color: var(--bg-secondary-container) !important;
+}
+
+.text-on-secondary-container {
+  color: var(--on-secondary-container) !important;
+}
+
+/* Post Modal Tags */
+#modalPostTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+#modalPostTags .badge {
+  background-color: var(--bg-secondary-container) !important;
+  color: var(--primary) !important;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50rem;
+  border: 1px solid rgba(0, 74, 198, 0.18);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+#modalPostTags .badge:hover {
+  background-color: var(--primary) !important;
+  color: #ffffff !important;
+  border-color: var(--primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 74, 198, 0.2);
+}
+
 /* --------------------------------------------------------------------------
    Hero Section & Buscador
    -------------------------------------------------------------------------- */
@@ -372,6 +411,28 @@ body {
   background: var(--bg-surface-low);
   border-color: var(--primary);
   color: var(--primary);
+}
+
+.btn-lb-success {
+  background: #16a34a;
+  color: #ffffff !important;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-lg);
+  padding: 0.6rem 1.25rem;
+  font-size: 0.875rem;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  text-decoration: none;
+}
+
+.btn-lb-success:hover {
+  background: #15803d;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.25);
 }
 
 /* --------------------------------------------------------------------------

@@ -193,7 +193,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fragmento de Código
     const codeContainer = document.getElementById('modalPostCode');
-    if (post.codeSnippet) {
+    const hasCodeSnippet = post.codeSnippet && post.codeSnippet.code && post.codeSnippet.code.trim() !== '';
+    if (hasCodeSnippet) {
       codeContainer.innerHTML = `
         <div class="code-block-container">
           <div class="code-block-header">
@@ -203,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </button>
           </div>
           <div class="code-block-body">
-            <pre><code class="language-${post.codeSnippet.language}">${escapeHtml(post.codeSnippet.code)}</code></pre>
+            <pre><code class="language-${post.codeSnippet.language || 'text'}">${escapeHtml(post.codeSnippet.code)}</code></pre>
           </div>
         </div>
       `;
@@ -225,6 +226,17 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       linksContainer.classList.add('d-none');
       linksContainer.innerHTML = '';
+    }
+
+    // Botón de Demo
+    const demoBtn = document.getElementById('modalPostDemoBtn');
+    if (demoBtn) {
+      if (post.demoUrl) {
+        demoBtn.setAttribute('href', post.demoUrl);
+        demoBtn.classList.remove('d-none');
+      } else {
+        demoBtn.classList.add('d-none');
+      }
     }
 
     // Botón de Descarga
